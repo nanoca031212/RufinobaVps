@@ -23,7 +23,7 @@ export default function Hero() {
             Entrega grátis Vespasiano e região
           </span>
           <span className="w-fit rounded-full bg-yellow-400 px-3 py-1 text-xs font-bold uppercase tracking-wide text-black lg:px-4 lg:py-1.5 lg:text-sm">
-            Divide 10x no cartão
+            Divide no cartão até 10x
           </span>
         </div>
 
