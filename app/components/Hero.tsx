@@ -20,10 +20,10 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col gap-3 px-5 pt-8 lg:h-full lg:max-w-2xl lg:justify-center lg:gap-6 lg:px-16 lg:pt-0">
         <div className="flex flex-wrap gap-2">
           <span className="w-fit rounded-full bg-yellow-400 px-3 py-1 text-xs font-bold uppercase tracking-wide text-black lg:px-4 lg:py-1.5 lg:text-sm">
-            Entrega hoje na sua casa
+            Entrega grátis Vespasiano e região
           </span>
           <span className="w-fit rounded-full bg-yellow-400 px-3 py-1 text-xs font-bold uppercase tracking-wide text-black lg:px-4 lg:py-1.5 lg:text-sm">
-            Atendimento 24 horas
+            Divide 10x no cartão
           </span>
         </div>
 
