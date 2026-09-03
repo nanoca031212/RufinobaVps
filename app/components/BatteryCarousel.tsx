@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { WHATSAPP_LINK } from "@/app/lib/constants";
+import WhatsAppLink from "./WhatsAppLink";
 
 const BRANDS = [
   { name: "Moura", image: "/produtos/Moura.png" },
@@ -46,14 +46,9 @@ export default function BatteryCarousel() {
             <div className="flex flex-1 flex-col gap-1 p-4">
               <span className="text-lg font-bold text-black">{brand.name}</span>
 
-              <a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 flex h-11 items-center justify-center rounded-full bg-black text-sm font-semibold text-white active:scale-[0.98]"
-              >
+              <WhatsAppLink className="mt-3 flex h-11 items-center justify-center rounded-full bg-black text-sm font-semibold text-white active:scale-[0.98]">
                 Consultar no WhatsApp
-              </a>
+              </WhatsAppLink>
             </div>
           </div>
         ))}

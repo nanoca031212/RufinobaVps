@@ -1,6 +1,6 @@
 import Image from "next/image";
 import AnimatedHighlightCard from "./AnimatedHighlightCard";
-import { WHATSAPP_LINK } from "@/app/lib/constants";
+import WhatsAppLink from "./WhatsAppLink";
 
 const VEHICLES = [
   {
@@ -36,12 +36,7 @@ export default function VehicleTypes() {
         <div className="mt-8 flex flex-col gap-4 lg:mt-12 lg:grid lg:grid-cols-3 lg:gap-6">
           {VEHICLES.map((vehicle) => (
             <AnimatedHighlightCard key={vehicle.label}>
-              <a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative block h-[340px] w-full overflow-hidden rounded-[2rem] bg-zinc-100 shadow-lg transition-transform duration-300 active:scale-[0.98] hover:shadow-xl lg:h-[380px]"
-              >
+              <WhatsAppLink className="group relative block h-[340px] w-full overflow-hidden rounded-[2rem] bg-zinc-100 shadow-lg transition-transform duration-300 active:scale-[0.98] hover:shadow-xl lg:h-[380px]">
                 <Image
                   src={vehicle.image}
                   alt={vehicle.label}
@@ -53,7 +48,7 @@ export default function VehicleTypes() {
                     {vehicle.label}
                   </span>
                 </div>
-              </a>
+              </WhatsAppLink>
             </AnimatedHighlightCard>
           ))}
         </div>
